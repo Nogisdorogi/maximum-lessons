@@ -21,3 +21,10 @@ elif hours >17 and hours<=21:
 elif hours >21 or hours <=5:
     print("night")
 
+string = "арбуз,дыня,яблоко,апельсин"
+
+def fruits(fruits_str):
+    list_fruits = string.split(",")
+    return list_fruits[0],list_fruits[-1]
+fruit1,fruit2 = fruits(string)
+print(fruit1)
